@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Norse";
+  src:
+    url("./fonts/Norse.woff2") format("woff2"),
+    url("./fonts/Norse.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Norse";
+  src:
+    url("./fonts/Norse-Bold.woff2") format("woff2"),
+    url("./fonts/Norse-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  line-height: calc(1em + 0.5rem); /*option*/
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1920px;
+  background-color: white;
+  margin-inline: auto;
+}
+
+.img-container {
+  flex: 1;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  color: white;
+
+  display: flex;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10px;
+  gap: 15px;
+}
+
+.odin-logo {
+  height: 5rem;
+}
+h1 {
+  font-size: 3.8rem;
+  font-family: "Norse";
+}
+.caption {
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.caption-link:link,
+.caption-link:visited,
+.caption-link:focus {
+  color: white;
+}
+
+.form-container {
+  flex: 2;
+}
